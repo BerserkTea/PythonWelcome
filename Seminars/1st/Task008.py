@@ -13,3 +13,9 @@ if coordinateX < 0 and coordinateY<0:
     print("Точка находится в 3 четверти")
 if coordinateX > 0 and coordinateY<0:
     print("Точка находится в 4 четверти")
+if coordinateX == 0 and coordinateY!=0:
+    print("Точка находится на оси y")
+if coordinateX != 0 and coordinateY==0:
+    print("Точка находится на оси x")
+if coordinateX == 0 and coordinateY==0:
+    print("Точка в начале координат")
