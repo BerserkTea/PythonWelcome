@@ -1,11 +1,14 @@
 # Подсчитать сумму цифр в вещественном числе.
+number = 15.12
+stringnumber = str(number)
+liststring = list(stringnumber)
+for i in liststring:
+    if i == ".":
+        liststring.remove(i)
 
-number = 25215.123123
-# def summaryDigits(somenumber):
-#     summ=0
-#     spisokList = str(somenumber).split(".")
-#     for i in spisokList:
-#         list
-#     return summ
-print(summaryDigits(number))
-sum(map)
+summOfDigits = 0
+for j in liststring:
+    summOfDigits += int(j)
+
+print(liststring)
+print(summOfDigits)
