@@ -9,3 +9,5 @@ def findHowMuch (a,b):
             counter+=1
     return counter
 print (findHowMuch(str1,str2))
+
+print(str1.count(str2))
