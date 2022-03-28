@@ -3,7 +3,7 @@
 
 N = int(input('Enter N '))
 spisok = []
-for i in range (-N,N+1):
+for i in range (-N,N+1,2):
     spisok.append(i)
 print(spisok)
 composition = 1
@@ -12,6 +12,6 @@ data = open(path, 'r')
 for line in data:
     temp = int(line)
     composition*=spisok[temp]
-    print(composition)
+    # print(composition)
 data.close
 print (composition)

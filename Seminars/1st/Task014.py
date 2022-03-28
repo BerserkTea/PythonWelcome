@@ -1,14 +1,22 @@
 # Подсчитать сумму цифр в вещественном числе.
-number = 15.1245646
-stringnumber = str(number)
-liststring = list(stringnumber)
-# for i in liststring:
-#     if i == ".":
-#         liststring.remove(i)
-liststring.remove(".")
+number = 51.1245646
+print(type(number))
+stringnumber = str(number).replace(".","")
+# number_1= int(stringnumber)
+# print(number_1)
+# liststring = list(stringnumber)
+# deleted_items = [",",".","-"]
+# # for i in liststring:
+# #     if i == ".":
+# #         liststring.remove(i)
+# stringnumber.remove(","or".")
+# newstring=stringnumber.replace(",","")
+number = 51.1245646
+print(type(number))
+stringnumber = str(number).replace(".","")
+print (stringnumber)
 summOfDigits = 0
-for i in liststring:
+for i in stringnumber:
     summOfDigits += int(i)
-
-print(liststring)
+print(stringnumber)
 print(summOfDigits)

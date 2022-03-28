@@ -5,5 +5,4 @@ for i in range(N):
     digit=(1+1*i)*i
     spisok.append(digit)
 print(spisok)
-
-import file.txt
+print(sum(spisok))
