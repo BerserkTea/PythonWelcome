@@ -1,13 +1,29 @@
 # 31.Составить список простых множителей натурального числа N
-N = int(input('Введите N'))
-x= N+1
-some_list = []
-for i in range(2, x):
-    if N % i == 0:
-        some_list.append(i)
-        N = N/i
-print(some_list)
+from math import factorial
 
+
+N = int(input('Введите N '))
+
+def Factor(n):
+    Ans = []
+    d = 2
+    while d * d <= n:
+        if n % d == 0:
+            Ans.append(d)
+            n //= d
+        else:
+            d += 1
+    if n > 1:
+        Ans.append(n)
+    return Ans
+print(Factor(N))
+
+
+# def IsPrime(n):
+#     d = 2
+#     while n % d != 0:
+#         d += 1
+#     return d == n
 
 # n = int(input("Введите натуральное число: "))
 # def factorization(n):
